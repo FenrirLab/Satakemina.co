@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500;700&display=swap');
+
+body{
+    background: linear-gradient(0deg, transparent 119px, #333 120px),linear-gradient(90deg, transparent 119px, #333 120px);
+    background-size: 120px 120px;
+    animation-duration: 1.5s;
+    animation-name: fadeIn;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+header{
+	position: sticky;
+	top: 0px;
+	overflow: hidden;
+	width: 99vw;
+	height: 100px;
+	background-color: #FFF;
+	padding: 0;
+}
+
+nav{
+	width: 100%;
+	list-style: none;
+	margin-top: auto;
+	margin-bottom: auto;
+
+	position: sticky;
+
+}
+
+nav ul{
+	display: flex;
+	flex-flow: row;
+	padding: 6px;
+	overflow: hidden;
+	justify-content: flex-end;
+}
+
+nav ul a{
+	margin: 10px;
+}
+
+nav li{
+	width: 15%;
+	text-align: center;
+	background-color: #666;
+
+}
+nav li a{
+	display: block;
+	margin-top: 25px;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.25em;
+	padding: 10px 24px;
+	color: #111
+}
+
+nav li a:hover{
+	background-color: #8cae47
+}
+nav  img{
+	margin-right: auto;
+	width: 240px;
+	float: left;
+	margin: 10px;
+}
+
+
+footer {
+	text-align: center;
+	margin: 10px;
+	font-weight: 300;
+}
+footer p{
+	padding: 10px
+}
+
+.swiper-container{
+	width: 100%;
+	height: 70vh;
+	text-align: center;
+
+}
+/*.swiper-pagination{
+	position: static;
+}*/
+
+.swiper-slide{
+
+}
+
+.swiper-slide.pic1{
+	background-image: url("../img/SSR01_2.png");
+	width: 100%;
+	height: 70vh;
+	background-size: cover;
+}
+
+.swiper-slide.pic2{
+	background-image: url("../img/SSR02_2.png");
+	width: 100%;
+	height: 70vh;
+	background-size: cover;
+}
+
+
+.swiper-slide.pic3{
+	background-image: url("../img/SSR03_2.png");
+	width: 100%;
+	height: 70vh;
+	background-size: cover;
+}
+
+.swiper-slide.pic4{
+	background-image: url("../img/SSR04_2.png");
+	width: 100%;
+	height: 70vh;
+	background-size: cover;
+}
+
+.swiper-slide.pic5{
+	background-image: url("../img/SSR05_2.png");
+	width: 100%;
+	height: 70vh;
+	background-size: cover;
+}
+section{
+	margin: 120px;
+	height: 100vh;
+}
+section h1{
+	margin-top: 120px;
+	text-align: center;
+	font-size: 3em;
+}
+
+
+
+#profile{
+	width: 80vw;
+	height: 200vh;
+	background-color: #fff;
+	margin-left:auto;
+	margin-right: auto;
+	position: static;
+}
+
+#profile h1{
+	margin: 120px;
+	font-size: 3em;
+	text-align:center;
+}
+
+#profile .swiper-container{
+	height: 600px;
+}
+.swiper-slide_stand{
+	background-image: url(../img/Minako_stand.png);
+	width:50%;
+	height: 600px;
+	background-size: cover;
+}
+
+.profile-container p{
+	text-align:center;
+}

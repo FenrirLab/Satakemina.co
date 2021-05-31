@@ -1,0 +1,1 @@
+satakemina.co
