@@ -8,7 +8,7 @@
   <meta name="">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main-1.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 
 
@@ -16,29 +16,93 @@
 
   <body>
     <header>
-      <nav class="navbar">
-        <ul><a href="index.html"><img src="img/logo.png"  alt="satakemina.co"></a>
+      <a href="index.html"><img src="img/logo.png"alt="satakemina.co"></a>
+    </header>
+
+    <nav id="navbar">
+        <ul>
           <li><a href="profile.html" title="PROFILE">PROFILE</a></li>
           <li><a href="#music" title="MUSIC">MUSIC</a></li>
           <li><a href="#live" title="LIVE">LIVE</a></li>
           <li><a href="#drama" title="DRAMA">DRAMA</a></li>
           <li><a href="#" title="CONTACT">CONTACT</a></li>
         </ul>
-      </nav>
-    </header>
+    </nav>
 
+    <section  class="profile">
 
-    <div id="profile">
-      <h1>PROFILE</h1>
-      <div class= "swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide_stand">stand_1</div>
+      <article class="standimage">
+        <div id="standimage" class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide stand1">Slide 1</div>
+            <div class="swiper-slide stand2">Slide 2</div>
         </div>
-        <div class="profile-container">
-          <p>texttext</p>
-        </div>
-      </div>
-    </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </article>
+
+      <article class="profile-list">
+        <p>profile-list</p>
+        <table>
+          <tr>
+            <th>NAME</th>
+            <td>SATAKE MINAKO</td>
+          </tr>
+          <tr>
+            <th>AGE</th>
+            <td>18</td>
+          </tr>
+          <tr>
+            <th>BIRTH</th>
+            <td>03/22</td>
+          </tr>
+          <tr>
+            <th>AGE</th>
+            <td>18</td>
+          </tr>
+          <tr>
+            <th>height</th>
+            <td>158cm</td>
+          </tr>
+          <tr>
+            <th>Weight</th>
+            <td>45kg</td>
+          </tr>
+          <tr>
+            <th>3-size</th>
+            <td>86-54-82</td>
+          </tr>
+          <tr>
+            <th>Blood</th>
+            <td>O</td>
+          </tr>
+          <tr>
+            <th>趣味</th>
+            <td>格闘ゲーム</td>
+          </tr>
+          <tr>
+            <th>利き手</th>
+            <td>右</td>
+          </tr>
+          <tr>
+            <th>出身地</th>
+            <td>東京都</td>
+          </tr>
+          <tr>
+            <th>特技</th>
+            <td>料理</td>
+          </tr>
+          <tr>
+            <th>好きなもの</th>
+            <td>友達との長電話</td>
+          </tr>
+
+        </table>
+
+      </article>
+
+    </section>
 
     <footer>
       <p>Copyright (C) 2021 Satakemina.co</p>
