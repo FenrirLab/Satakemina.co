@@ -1,8 +1,15 @@
 const slider1 = new Swiper('#slider1', {
       /*autoplay loop*/
-      spaceBetween: 0,
       loop: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
       centeredSlides: true,
+      breakpoints: {
+        1000: {
+          slidesPerView: 1.5,
+          spaceBetween: 20
+        }
+      },
       autoplay: {
         delay: 5000,
         disableOnInteraction: false,
@@ -15,6 +22,7 @@ const slider1 = new Swiper('#slider1', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      
     });
 
 const standimage = new Swiper('#standimage', {

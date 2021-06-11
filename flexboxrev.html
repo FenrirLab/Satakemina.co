@@ -9,42 +9,45 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/flexrwd.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 
 </head>
 
   <body>
     <header>
-      <a href="index.html"><img src="img/logo.png"alt="satakemina.co"></a>
+        <nav class="topnav" id="myTopnav">
+        <a href="#"><img src="img/logo.png" alt="satakemina.co"></a>
+        <a href="#">PROFILE</a>
+        <a href="#">MUSIC</a>
+        <a href="#">LIVE</a>
+        <a href="#">CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars fa-3x"></i>
+        </a>
+
+    </nav>
     </header>
 
-    <nav id="navbar">
-        <ul>
-          <li><a href="profile.html" title="PROFILE">PROFILE</a></li>
-          <li><a href="#music" title="MUSIC">MUSIC</a></li>
-          <li><a href="#live" title="LIVE">LIVE</a></li>
-          <li><a href="#drama" title="DRAMA">DRAMA</a></li>
-          <li><a href="#" title="CONTACT">CONTACT</a></li>
-        </ul>
-    </nav>
 
-    <section  class="profile">
 
-      <article class="standimage">
+    <div class="flex-container">
+      <div class="flex-item-left standimage">
         <div id="standimage" class="swiper-container">
           <div class="swiper-wrapper">
+
             <div class="swiper-slide stand1">Slide 1</div>
             <div class="swiper-slide stand2">Slide 2</div>
+
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-      </article>
-
-      <article class="profile-list">
-        <p>profile-list</p>
-        <table>
+      </div>
+      <div class="flex-item-right">
+                <table>
           <tr>
             <th>NAME</th>
             <td>SATAKE MINAKO</td>
@@ -99,10 +102,10 @@
           </tr>
 
         </table>
+    </div>
 
-      </article>
 
-    </section>
+
 
     <footer>
       <p>Copyright (C) 2021 Satakemina.co</p>
