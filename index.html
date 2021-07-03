@@ -5,33 +5,36 @@
 	<meta charset="UTF-8">
 	<title>Satakemina.co</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="">
+
+  <meta name="description" content="アイドルマスターミリオンライブに登場する、佐竹美奈子の非公式ファンサイトです。">
+  <meta name="keywords" content="佐竹美奈子,">
+  <meta name="twitter:title" content="satakemina.co">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/swiper-bundle.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
 
 
 </head>
 
   <body>
     <header>
-       <nav class="topnav" id="myTopnav">
+       <nav id="topnav">
           <a href="#"><img src="img/logo.png" alt="satakemina.co"></a>
-          <a href="#">PROFILE</a>
-          <a href="#">MUSIC</a>
-          <a href="#">LIVE</a>
-          <a href="#">CONTACT</a>
+          <a href="#"><p>PROFILE</p></a>
+          <a href="#"><p>MUSIC</p></a>
+          <a href="#"><p>LIVE</p></a>
+          <a href="#"><p>CONTACT</p></a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars fa-3x"></i>
+            <i class="fa fa-bars"></i>
           </a>
 
         </nav>
     </header>
 
        
-
+<!-- Swiper slider -->
     <div id="slider1" class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide pic1">Slide 1</div>
@@ -41,25 +44,27 @@
         <div class="swiper-slide pic5">Slide 5</div>
       </div>
 
-
       <div class="swiper-pagination"></div>
-
-
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
 
     </div>
 
-    <section id="news">
+<!-- section news -->
+
+    <section id="news" class="js-scroll slide-bottom">
       <h1>NEWS</h1>
       <p>twitterのツイートをお知らせとして使うのはありかもしれない</p>
       <dl>
         <dt>2020.01.01 <a id="label-info">お知らせ</a></dt>
         <dd>更新しました。</dd>
         <dt>2020.01.01</dt>
-        <dd>今週までにSectionをOnscrollでフェードインさせる</dd>
+        <dd>Smooth Scroll 欲しいね</dd>
         <dt>2020.01.01</dt>
-        <dd>ハンバーガーメニューまだ実装してない</dd>
+        <dd>ハンバーガーメニューまだ実装してない<br>
+          開いたら
+        </dd>
+
         <dt>2020.01.01</dt>
         <dd>PROFILEとかもまだ</dd>
         <dt>2020.01.01</dt>
@@ -67,24 +72,13 @@
       </dl>
     </section>
 
-    <section  class="profile">
+    <section id="profile"  class="profile js-scroll slide-left ">
+      <h1>PROFILE</h1>
+      <p></p>
+      <p>主な出演</p>
 
-        <article class="standimage">
-          <div id="standimage" class="swiper-container profile">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide stand1">Slide 1</div>
-              <div class="swiper-slide stand2">Slide 2</div>
-            </div>
 
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </article>
-
-      <p>リストじゃなくて透過画像埋め込んでもいいのかもしれない</p>
-        <p>ついでに</p>
-
-      <p>挙動がわからん</p>
+      
 
 
 <!--
@@ -95,17 +89,17 @@
 -->
     </section>
 
-    <section id="music">
+    <section id="music" class="js-scroll slide-right">
       <h1>MUSIC</h1>
       <p>タイル状にジャケットを並べて</p>
       <p>ジャケットのしたに歌唱曲名を</p>
       
       <h2>solo</h2>
-      <p>LTP09</p>
-      <p>LTH08</p>
-      <p>MS03</p>
+      <p>LTP09 スマイルいちばん</p>
+      <p>LTH08 SUPER SIZE LOVE</p>
+      <p>MS03  満腹至極フルコォス </p>
       <h2>UNIT</h2>
-      <p>LTP09</p>
+      <p>LTP09 </p>
       <p>LTH08</p>
       <p>LTD04</p>
       <p>LTF01</p>
@@ -115,18 +109,24 @@
 
     </section>
 
-    <section id="live">
+    <section id="live" class="js-scroll slide-left">
       
       <h1>LIVE</h1>
       <p>ここにタイル状に並べたいよね</p>
-      <p>1stLive H@PPY PERFORMANCE</p>
-      <p>1stLive H@PPY PERFORMANCE</p>
-      <p>1stLive H@PPY PERFORMANCE</p>
-      <p>1stLive H@PPY PERFORMANCE</p>
-      <p>1stLive H@PPY PERFORMANCE</p>
-      <p>1stLive H@PPY PERFORMANCE</p>
-      <p>1stLive H@PPY PERFORMANCE</p>
+      <p>CENTER LIVE</p>
+      <p>20170629　スマイルいちばん</p>
+      <p>UNIT LIVE</p>
+      <p>20171204-1211 プラチナスターシアター　ドリームトラベラー</p>
+      20180620-0627　プラチナスターツアー　咲くは浮世の君花火
+      <p>20180803-0811　プラチナスターシアター　サンリズムオーケストラ</p>
+      <p>20190312-0310　プラチナスターシアター　Bonnes! Bonnes! Vacances!!!</p>
+      <p>20190903-0910 プラチナスターシアター　赤い世界が消える頃</p>
+      <p>20200218-0225 プラチナスターツアー　SuperDuper</p>
+      <p>20200402-0409 プラチナスターシアター　Helloコンチェルト</p>
+      <p>20200803-0810　プラチナスターチューン　BORN ON DREAM！</p>
+      <p>20210617-0623 プラチナスターテール　聖ミリオン女学園　あなたへの約束</p>
     </section>
+
 
     <section id="drama">
       <h1>DRAMA</h1>
@@ -140,7 +140,7 @@
       <p>押すとツイートするボタンにしたい</p>
     </section>
 
-    <footer>
+    <footer class="footer">
       <a class="fab fa-twitter" href="https://twitter.com/Satakemina_co"></a>
       <a class="fab fa-github" href="https://github.com/FenrirLab/Satakemina.co"></a>
       <a class="fas fa-share-alt"></a>

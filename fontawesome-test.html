@@ -2,22 +2,160 @@
 <html lang="ja">
 
 <head>
-	<meta charset="UTF-8">
-	<title>fontawesome-test</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+  <title>Satakemina.co</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <script src="https://kit.fontawesome.com/80c1dbe7f8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
 
 
 </head>
 
   <body>
-      <!-- fontawesome test  -->
-      <i class="fas fa-clipboard"></i>
-      <i class="fab fa-amazon"></i>
-      <p>amazon</p>
+    <header>
+       <nav class="topnav" id="myTopnav">
+          <a href="#"><img src="img/logo.png" alt="satakemina.co"></a>
+          <a href="#">PROFILE</a>
+          <a href="#">MUSIC</a>
+          <a href="#">LIVE</a>
+          <a href="#">CONTACT</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars fa-3x"></i>
+          </a>
 
+        </nav>
+    </header>
+
+       
+
+    <div id="slider1" class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide pic1">Slide 1</div>
+        <div class="swiper-slide pic2">Slide 2</div>
+        <div class="swiper-slide pic3">Slide 3</div>
+        <div class="swiper-slide pic4">Slide 4</div>
+        <div class="swiper-slide pic5">Slide 5</div>
+      </div>
+
+
+      <div class="swiper-pagination"></div>
+
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <section id="news">
+      <h1>NEWS</h1>
+      <p>twitterのツイートをお知らせとして使うのはありかもしれない</p>
+      <dl>
+        <dt>2020.01.01 <a id="label-info">お知らせ</a></dt>
+        <dd>更新しました。</dd>
+        <dt>2020.01.01</dt>
+        <dd>今週までにSectionをOnscrollでフェードインさせる</dd>
+        <dt>2020.01.01</dt>
+        <dd>ハンバーガーメニューまだ実装してない</dd>
+        <dt>2020.01.01</dt>
+        <dd>PROFILEとかもまだ</dd>
+        <dt>2020.01.01</dt>
+        <dd>更新しました。</dd>
+      </dl>
+    </section>
+
+    <section  class="profile">
+
+        <article class="standimage">
+          <div id="standimage" class="swiper-container profile">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide stand1">Slide 1</div>
+              <div class="swiper-slide stand2">Slide 2</div>
+            </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </article>
+
+      <p>リストじゃなくて透過画像埋め込んでもいいのかもしれない</p>
+        <p>ついでに</p>
+
+      <p>挙動がわからん</p>
+
+
+<!--
+      <article class="profile-list">
+        <p>profile-list</p>
+
+      </article>
+-->
+    </section>
+
+    <section id="music">
+      <h1>MUSIC</h1>
+      <p>タイル状にジャケットを並べて</p>
+      <p>ジャケットのしたに歌唱曲名を</p>
+      
+      <h2>solo</h2>
+      <p>LTP09</p>
+      <p>LTH08</p>
+      <p>MS03</p>
+      <h2>UNIT</h2>
+      <p>LTP09</p>
+      <p>LTH08</p>
+      <p>LTD04</p>
+      <p>LTF01</p>
+      <p>MTG10</p>
+      <p>MTW07</p>
+      <p></p>
+
+    </section>
+
+    <section id="live">
+      
+      <h1>LIVE</h1>
+      <p>ここにタイル状に並べたいよね</p>
+      <p>1stLive H@PPY PERFORMANCE</p>
+      <p>1stLive H@PPY PERFORMANCE</p>
+      <p>1stLive H@PPY PERFORMANCE</p>
+      <p>1stLive H@PPY PERFORMANCE</p>
+      <p>1stLive H@PPY PERFORMANCE</p>
+      <p>1stLive H@PPY PERFORMANCE</p>
+      <p>1stLive H@PPY PERFORMANCE</p>
+    </section>
+
+    <section id="drama">
+      <h1>DRAMA</h1>
+      <p>TA03</p>
+      <p>TB02</p>
+    </section>
+
+
+    <section id="wahhoi">
+      <a class="fas fa-bullhorn fa-3x" href="#" ></a>
+      <p>押すとツイートするボタンにしたい</p>
+    </section>
+
+    <footer>
+      <a class="fab fa-twitter" href="https://twitter.com/Satakemina_co"></a>
+      <a class="fab fa-github" href="https://github.com/FenrirLab/Satakemina.co"></a>
+      <a class="fas fa-share-alt"></a>
+
+      <p>Copyright (C) 2021 Satakemina.co</p>
+      <p>The copyright to THE IDOLM@STER contents belongs to BANDAI NAMCO Entertainment inc. </p>
+      <p>当サイトは「アイドルマスターミリオンライブ!」及び「アイドルマスターミリオンライブ!シアターデイズ」に登場する佐竹美奈子の非公式ファンサイトです。</p>
+
+      <a href="#">当サイトについて</a>
+      <a href="#">お問い合わせ</a>
+    </footer>
+
+      <script src="js/swiper-bundle.js"></script>
+      <script src="js/swiper.js"></script>
+      <script src="js/script.js"></script>
 
   </body>
 

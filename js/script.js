@@ -2,15 +2,34 @@
 
 window.onscroll = function() {navSticky()};
 
-const navbar = document.getElementById("navbar");
-const sticky = navbar.offsetTop;
+const topnav = document.getElementById("topnav");
+const sticky = topnav.offsetTop;
 
 function navSticky() {
 	if (window.pageYOffset >= sticky) {
-		navbar.classList.add("sticky")
+		topnav.classList.add("sticky")
 	}else{
-		navbar.classList.remove("sticky");
+		topnav.classList.remove("sticky");
 	}
 }
 
-//
+
+//js-scrollclassでフェードインさせる
+//https://codepen.io/yukinouz1/pen/mdeNQXe
+const scrollTarget = document.querySelectorAll('.js-scroll');
+
+window.addEventListener('scroll', () => {
+  for (let i = 0; i < scrollTarget.length; i++){
+    const rect = scrollTarget[i].getBoundingClientRect().top;
+
+    const scroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    const offset = rect + scroll;
+
+    const windowHeight = window.innerHeight; // 現在のブラウザの高さ
+
+    if (scroll > offset - windowHeight + 300) {
+      scrollTarget[i].classList.add('scrolled');
+    }
+  }
+});
